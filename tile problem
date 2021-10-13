@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+
+int tile(int n)
+{
+
+    if(n==0)
+       return 0;
+       if(n==1)
+        return 1;
+    return tile(n-1)+tile(n-2);
+}
+int main()
+{
+
+int n;
+cout<<"enter no of tile : ";
+cin>>n;
+int ans=tile(n);
+cout<<ans;
+return 0;
+}
